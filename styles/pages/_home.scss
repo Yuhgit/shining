@@ -80,7 +80,7 @@
             right: -18px;
             top: calc(50% - 5px);
           }
-          &:last-child::after {
+          &:last-of-type::after {
             content: none;
           }
         }
@@ -314,7 +314,7 @@
       display: flex;
       justify-content: space-between;
     }
-    &__img{
+    &__img {
       width: 100%;
       margin-bottom: 20px;
       @include mq(md) {
@@ -912,8 +912,12 @@
         width: 26%;
         margin: 0 2%;
       }
+      & a {
+        width: 100%;
+      }
       & img {
         width: 20%;
+        margin: 0 auto;
       }
     }
   }
@@ -1043,16 +1047,16 @@
 }
 
 /*擬似要素装飾*/
-.header .icon-eye{
-position: absolute;
-width: 48px;
-height: auto;
-top: 16px;
-right: 16%;
-z-index: -1;
-@include mq(xl) {
-  right: calc((100% - 1000px) / 2 );
-}
+.header .icon-eye {
+  position: absolute;
+  width: 48px;
+  height: auto;
+  top: 16px;
+  right: 16%;
+  z-index: -1;
+  @include mq(xl) {
+    right: calc((100% - 1000px) / 2);
+  }
 }
 .element {
   position: relative;
@@ -1078,7 +1082,7 @@ main {
     }
   }
 }
-.for-element2{
+.for-element2 {
   &::before {
     background: url(../images/blue-octagon.svg);
     width: 12%;

@@ -276,7 +276,7 @@ h2 {
     right: -18px;
     top: calc(50% - 5px);
   }
-  .header__navigation ul li:last-child::after {
+  .header__navigation ul li:last-of-type::after {
     content: none;
   }
 }
@@ -1177,8 +1177,12 @@ h2 {
     margin: 0 2%;
   }
 }
+.contact__sns__one a {
+  width: 100%;
+}
 .contact__sns__one img {
   width: 20%;
+  margin: 0 auto;
 }
 
 .bg-grid {
