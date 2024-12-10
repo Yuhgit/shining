@@ -1620,7 +1620,7 @@ main::before {
 .about::after {
   background: url(../images/octagon.svg);
   width: 35%;
-  aspect-ratio: 61/44;
+  aspect-ratio: 60/44;
   left: 0;
   top: -100px;
 }
